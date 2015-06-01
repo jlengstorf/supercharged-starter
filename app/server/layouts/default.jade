@@ -1,0 +1,19 @@
+//- # default.jade
+//- This layout is extended by other pages. It creates general structure and
+//- provides shared scripts and stylesheets.
+
+//- This will be used for (or appended to) all page titles
+- var title = 'Supercharge Your Front-End Workflow';
+
+doctype html
+html(lang="en")
+  head
+
+    //- Each view that extends this layout can set its own title with a var
+    block title
+      title= title
+
+  body
+
+    block content
+      h1 Hello World!
